@@ -17,7 +17,7 @@ $("#login").click(function () {
       password: $("#password").val()
     }
     $.ajax({
-      url: "http://localhost:8080/api/user/" + datos.email + "/" + datos.password,
+      url: "http://129.151.117.48:8080/api/user/" + datos.email + "/" + datos.password,
       method: "GET",
       dataType: "json",
       success: function (response) {
@@ -56,7 +56,7 @@ $("#guardar").click(function () {
         name: $("#usuarioRegistro").val()
       }
       $.ajax({
-        url: "http://localhost:8080/api/user/new",
+        url: "http://129.151.117.48:8080/api/user/new",
         method: "POST",
         dataType: "json",
         data: JSON.stringify(datos),
